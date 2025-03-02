@@ -1,1 +1,6 @@
-!.ddev/
+/.ddev/
+/data/
+/install/
+/out/
+/www/
+
