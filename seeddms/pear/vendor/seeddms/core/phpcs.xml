@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<ruleset name="SeedDmsStandard" namespace="SeedDMS\PHPCS">
+  <description>Coding standards for SeedDMS.</description>
+  <file>Core</file>
+  <exclude-pattern>oldtests/*</exclude-pattern>
+  <exclude-pattern>tests/*</exclude-pattern>
+  <arg name="extensions" value="php"/>
+  <arg name="tab-width" value="2"/>
+  <rule ref="PSR2">
+    <exclude name="Generic.WhiteSpace.DisallowTabIndent" />
+    <exclude name="Generic.Files.LineLength"/>
+    <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine"/>
+    <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.ContentAfterBrace"/>
+    <exclude name="Squiz.Classes.ValidClassName.NotPascalCase"/>
+    <exclude name="Squiz.WhiteSpace.ScopeClosingBrace.ContentBefore"/>
+    <exclude name="PSR1.Classes.ClassDeclaration.MissingNamespace"/>
+    <exclude name="PSR1.Classes.ClassDeclaration.MultipleClasses"/>
+    <exclude name="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/>
+    <exclude name="PSR2.Classes.PropertyDeclaration.Underscore"/>
+    <exclude name="PSR2.Classes.ClassDeclaration.OpenBraceNewLine"/>
+    <exclude name="Generic.ControlStructures.InlineControlStructure.NotAllowed"/>
+  </rule>
+  <rule ref="Generic.WhiteSpace.DisallowSpaceIndent"/>
+  <rule ref="Generic.WhiteSpace.ScopeIndent">
+    <properties>
+      <property name="indent" value="2"/>
+      <property name="tabIndent" value="true"/>
+    </properties>
+  </rule>
+</ruleset>

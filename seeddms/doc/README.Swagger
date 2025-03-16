@@ -1,0 +1,23 @@
+Swagger
+========
+
+Swagger is used to describe a rest api. SeedDMS ships a swagger.yaml file
+in the restapi directory. You can load this file into a swagger editor, e.g.
+http://petstore.swagger.io/ or http://editor.swagger.io/
+You may as well set up your own swagger-ui installation as described at
+https://medium.com/@tatianaensslin/how-to-add-swagger-ui-to-php-server-code-f1610c01dc03
+
+Your apache needs to have the module `header` enabled, because some HTTP headers
+are set when the file `swagger.yaml` is accessed by the editor.
+
+Currently, the swagger.yaml shipped with SeedDMS uses still swagger 2.0
+
+If you are using php-fpm you will have to ensure that files with
+extension .yaml are allowed to be parsed. Extend the
+`security.limit_extensions` in the pool configuration by `.yaml`. Also
+check the contents of the file `.htaccess` in directory `restapi`. It
+by default sets the handler for php to `application/x-httpd-php` which
+uses the apache module of php. If you would like to use php-fpm
+instead, then set it to
+
+    SetHandler "proxy:unix:/var/run/php/php8.2-fpm.sock|fcgi://localhost/"

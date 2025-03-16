@@ -1,0 +1,76 @@
+{
+    "config": {
+        "platform": {
+            "php": "8.2"
+        }
+    },
+    "require": {
+        "robthree/twofactorauth": "^1.5",
+        "slim/slim": "^4.0",
+        "guzzlehttp/psr7": "*",
+        "erusev/parsedown": "*",
+        "erusev/parsedown-extra": "*",
+        "mibe/feedwriter": "^1.1",
+        "phpoffice/phpspreadsheet": "*",
+        "sabre/xml": "*",
+        "sabre/dav": "^4.",
+        "pear/log": "*",
+        "pear/mail": "*",
+        "pear/mail_mime": "*",
+        "pear/net_smtp": "*",
+        "pear/auth_sasl": "*",
+        "pear/db": "*",
+        "dragonmantank/cron-expression": "^3.1",
+        "alecrabbit/php-console-colour": "*",
+        "dragonmantank/cron-expression": "^3",
+        "zf1/zend-search-lucene": "*",
+        "symfony/http-foundation": "^5.4",
+        "php-di/php-di": "^6.4",
+        "slim/psr7": "^1.7",
+        "seeddms/core": "dev-master",
+        "seeddms/lucene": "dev-master",
+        "seeddms/preview": "dev-master",
+        "seeddms/sqlitefts": "dev-master",
+        "seeddms/http_webdav_server": "dev-master"
+    },
+    "require-dev": {
+        "composer/composer": "dev-main"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "/home/cvs/seeddms-ext/core",
+            "options": {
+                "symlink": false
+            }
+        },
+        {
+            "type": "path",
+            "url": "/home/cvs/seeddms-ext/lucene",
+            "options": {
+                "symlink": false
+            }
+        },
+        {
+            "type": "path",
+            "url": "/home/cvs/seeddms-ext/preview",
+            "options": {
+                "symlink": false
+            }
+        },
+        {
+            "type": "path",
+            "url": "/home/cvs/seeddms-ext/sqlitefts",
+            "options": {
+                "symlink": false
+            }
+        },
+        {
+            "type": "path",
+            "url": "/home/cvs/seeddms-ext/http_webdav_server",
+            "options": {
+                "symlink": false
+            }
+        }
+    ]
+}

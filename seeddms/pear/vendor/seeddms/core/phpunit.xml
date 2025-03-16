@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.5/phpunit.xsd" executionOrder="depends,defects" beStrictAboutOutputDuringTests="false" failOnRisky="false" failOnWarning="true" cacheDirectory=".phpunit.cache" requireCoverageMetadata="false" beStrictAboutCoverageMetadata="false">
+  <php>
+    <const name="STORAGE" value=""/>
+		<const name="S3_ENDPOINT" value="http://127.0.0.1:9000"/>
+		<const name="S3_BUCKET" value="test"/>
+		<const name="S3_KEY" value="xgDg2LTMsesFPlFBFWEw"/>
+		<const name="S3_SECRET" value="U6J9Fy62Vu1wXSnKTIkvCMDhdxSczZFYX7f8xsHy"/>
+  </php>
+  <testsuites>
+    <testsuite name="default">
+      <directory suffix="Test.php">tests</directory>
+    </testsuite>
+  </testsuites>
+  <source>
+    <include>
+      <directory suffix=".php">Core</directory>
+    </include>
+  </source>
+</phpunit>

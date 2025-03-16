@@ -1,0 +1,34 @@
+{
+    "name": "seeddms/core",
+    "description": "Core classes to access a SeedDMS database",
+    "type": "library",
+    "license": "GPL-2.0-or-later",
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Seeddms\\Core\\": "Core/"
+        },
+        "classmap": ["Core/"]
+    },
+    "authors": [
+        {
+            "name": "Uwe Steinmann",
+            "email": "info@seeddms.org"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^10",
+        "dealerdirect/phpcodesniffer-composer-installer": "dev-main",
+        "phpstan/phpstan": "2.1.x-dev",
+        "friendsofphp/php-cs-fixer": "dev-master"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "scripts": {
+        "phpcs": "phpcs -s",
+        "phpcbf": "phpcbf --standard='SeedDmsStandard'"
+    }
+}
